@@ -1,0 +1,17 @@
+#footer {
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #454545;
+}
+
+#footer p {
+    margin: 0;
+    color: white;
+    text-shadow: #000 0px 1px 1px;
+}

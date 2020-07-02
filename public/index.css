@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: white;
+}
+
+a:visited {
+    color: black;
+}
+
+#root {
+    min-height: 100%;
+}
