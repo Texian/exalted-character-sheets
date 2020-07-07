@@ -4,21 +4,26 @@ import './Header.css';
 
 const Header = (props) => {
     return(
+        <>
         <div id="header">
-            <h1>Exalted Character Sheet</h1>
+            <h1><a href="/">Exalted Character Sheets</a></h1>
             {
                 (props.user)
-                ? <div className="login">
-                    <button>Welcome, {props.user}</button>
-                    <button onClick={props.logout}Logout></button>
-                </div>
-                :
+                ?<> 
+                    <div className="login">
+                    <a href="/characters">Characters</a>
+                    <button onClick={props.logout}>Logout</button>
+                    </div>
+                </>
+                :<>
                 <div className="login">
                     <Link to='/register'>Register</Link>
                     <Link to='/login'>Login</Link>
                 </div>
+                </>
             }
         </div>
+        </>
     )
 }
 
